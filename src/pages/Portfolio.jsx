@@ -44,10 +44,10 @@ export default function Portfolio() {
               className="w-full rounded-[10px] mb-4"
             >
               <SwiperSlide>
-                <img src="/images/main home page.png" alt="AUPark 1" className="w-full rounded-[10px]" />
+                <img src="/AUpark/main home page.png" alt="AUPark 1" className="w-full rounded-[10px]" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/project1-extra.jpg" alt="AUPark 2" className="w-full rounded-[10px]" />
+                <img src="/AUpark/project1-extra.jpg" alt="AUPark 2" className="w-full rounded-[10px]" />
               </SwiperSlide>
             </Swiper>
             <h3 className="text-2xl font-semibold mb-2 text-[#212121]">AUPark</h3>
