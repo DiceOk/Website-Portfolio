@@ -21,10 +21,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-[#d7d4ca] shadow-md z-50 transition-transform duration-300 ${
-        showNavbar ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`fixed top-0 left-0 w-full bg-[#d7d4ca] z-50 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
+        }`}
     >
+
       <div className="flex items-center justify-between w-[84%] mx-auto py-2">
         <img
           src="/images/FavLogo.png"
