@@ -11,16 +11,32 @@ export default function Portfolio() {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const [currentImages, setCurrentImages] = useState([]);
+  const preloadImages = (images) => {
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+};
 
   const openLightbox = (images, index) => {
+    preloadImages(images);
     setCurrentImages(images);
     setPhotoIndex(index);
-    setIsOpen(true);
+    setTimeout(() => setIsOpen(true), 100); // Delay helps initial render
   };
 
   const warehouseImages = [
-    "/images/warehouse.jpg", 
-    "/images/warehouse2.jpg"
+    "images/Warehouse Management/WMS Login.png",
+    "/images/Warehouse Management/Admin Dashboard.png",
+    "/images/Warehouse Management/Admin Inventory.png",
+    "/images/Warehouse Management/Admin Inbound.png",
+    "/images/Warehouse Management/Admin Outbound.png",
+    "/images/Warehouse Management/Admin Billings.png",
+    "/images/Warehouse Management/Admin Users.png",
+    "/images/Warehouse Management/Admin Reports.png",
+    "/images/Warehouse Management/Profil Settings.png",
+    "/images/Warehouse Management/Lightdarkmode.png",
+    
   ];
   const aupImages = [
     "/images/AUpark/Architectural design.jpg",
@@ -38,7 +54,7 @@ export default function Portfolio() {
     "/images/AUpark/Contact page.jpg",
     "/images/AUpark/Rules and Regulations Page.jpg",
     "/images/AUpark/About us page.jpg",
-    "/images/AUpark/Login page.jpg",
+    "/images/AUpark/Login page.jpg", 
     "/images/AUpark/PSD 2nd view.jpg",
     "/images/AUpark/User Reports Page.jpg",
     "/images/AUpark/Statistics.jpg",
@@ -46,7 +62,7 @@ export default function Portfolio() {
     "/images/AUpark/PSD interview.jpg",
     "/images/AUpark/Setup 1.png",
     "/images/AUpark/Setup 2.jpg",
-
+    
     
   ];
   const videoImages = [
@@ -78,7 +94,7 @@ export default function Portfolio() {
                   <img
                     src={src}
                     alt={`Warehouse ${index + 1}`}
-                    className="w-full rounded-[10px] cursor-pointer"
+                    className="w-full h-[200px] object-cover rounded-[10px] cursor-pointer"
                     onClick={() => openLightbox(warehouseImages, index)}
                   />
                 </SwiperSlide>
@@ -99,7 +115,7 @@ export default function Portfolio() {
                   <img
                     src={src}
                     alt={`AUPark ${index + 1}`}
-                    className="w-full rounded-[10px] cursor-pointer"
+                    className="w-full h-[200px] object-cover rounded-[10px] cursor-pointer"
                     onClick={() => openLightbox(aupImages, index)}
                   />
                 </SwiperSlide>
@@ -120,7 +136,7 @@ export default function Portfolio() {
                   <img
                     src={src}
                     alt={`Video Editing ${index + 1}`}
-                    className="w-full rounded-[10px] cursor-pointer"
+                    className="w-full h-[200px] object-cover rounded-[10px] cursor-pointer"
                     onClick={() => openLightbox(videoImages, index)}
                   />
                 </SwiperSlide>
@@ -142,7 +158,7 @@ export default function Portfolio() {
                     <img
                       src={src}
                       alt={`Automation ${index + 1}`}
-                      className="w-full rounded-[10px] cursor-pointer"
+                      className="w-full h-[200px] object-cover rounded-[10px] cursor-pointer"
                       onClick={() => openLightbox(automateImages, index)}
                     />
                   </SwiperSlide>
