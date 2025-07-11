@@ -34,7 +34,7 @@ export default function Portfolio() {
     "/images/Warehouse Management/Admin Billings.png",
     "/images/Warehouse Management/Admin Users.png",
     "/images/Warehouse Management/Admin Reports.png",
-    "/images/Warehouse Management/Profil Settings.png",
+    "/images/Warehouse Management/Profile Settings.png",
     "/images/Warehouse Management/Lightdarkmode.png",
     
   ];
