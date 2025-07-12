@@ -8,11 +8,11 @@ export default function About() {
       <div className="mx-[8%] my-[5%] text-[#212121]">
         <h1 className="text-4xl mb-5 font-bold">About Me</h1>
         <p className="text-[#555] mb-5 leading-[1.6]">
-          Hello! I'm Daisuke Hamo, a passionate programmer and web developer with
-          expertise in JavaScript, React, and Python. I specialize in building
-          interactive and responsive websites. I have a background in customer
-          service, virtual assistance, and tech support, which helps me
-          understand user needs and deliver high-quality results in my projects.
+          Hello! I'm Daisuke Hamo, a dedicated and solutions-driven full stack 
+          developer with a background in Information Technology and hands-on 
+          experience in building real-world systems. I specialize in JavaScript, 
+          React, Python, and cloud-based technologies, with a strong focus on 
+          creating scalable, user-friendly web applications.
         </p>
         <p className="text-[#555] mb-5 leading-[1.6]">
           Throughout my journey, I’ve worked on various projects ranging from
