@@ -58,14 +58,6 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              to="/services"
-              className="text-black hover:text-red-500 transition-colors duration-200"
-            >
-              SERVICES
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/hireme"
               className="text-black hover:text-red-500 transition-colors duration-200"
             >
