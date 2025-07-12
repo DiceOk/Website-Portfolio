@@ -58,11 +58,6 @@ export default function Portfolio() {
     "/images/AUpark/Setup 2.jpg",
   ];
 
-  const videoImages = [
-    "/images/project2.jpg",
-    "/images/project2-extra.jpg",
-  ];
-
   const automateImages = [
     "/images/VBA/Shipment Data.png",
     "/images/VBA/Scan and process Tracking.png",
@@ -111,13 +106,11 @@ export default function Portfolio() {
             aupImages,
             "A parking management system using Python, MongoDB, YOLOv8, and OpenCV."
           )}
-          <div className="w-full flex justify-center">
             {renderProject(
               "Automation with Power Automate",
               automateImages,
               "Automated workflows and tasks using Microsoft Power Automate to boost productivity."
             )}
-          </div>
         </div>
       </div>
 
