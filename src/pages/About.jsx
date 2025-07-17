@@ -22,7 +22,6 @@ export default function About() {
           which strengthened my skills in front-end and back-end development, 
           database design, and automation.
         </p>
-        <h2 className="text-2xl mb-5 font-semibold">My Journey</h2>
         <p className="text-[#555] mb-5 leading-[1.6]">
           In addition to programming, I’ve worked as a virtual assistant handling
           data entry, video editing, and web development using WordPress, and 
@@ -36,13 +35,6 @@ export default function About() {
           <li>Automation (Excel Macros, VBA, Power Automate)</li>
           <li>Cloud Deployment (Vercel, Render, AWS)</li>
           <li>Strong foundation in system architecture, web security, and user experience</li>
-        </ul>
-        <h2 className="text-2xl mb-5 font-semibold">Achievements</h2>
-        <ul className="list-disc ml-6 text-[#555] leading-[1.8]">
-          <li>
-            Developed a parking management system for Adventist University of the
-            Philippines using YOLOv8 and OpenCV
-          </li>
         </ul>
       </div>
     </div>
