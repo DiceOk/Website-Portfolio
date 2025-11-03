@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -24,7 +23,6 @@ export default function Navbar() {
       className={`fixed top-0 left-0 w-full bg-[#d7d4ca] z-50 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
         }`}
     >
-
       <div className="flex items-center justify-between w-[84%] mx-auto py-2">
         <img
           src="/images/FavLogo.png"
@@ -33,36 +31,36 @@ export default function Navbar() {
         />
         <ul className="flex space-x-6 font-semibold text-sm">
           <li>
-            <Link
-              to="/"
+            <a
+              href="#home"
               className="text-black hover:text-red-500 transition-colors duration-200"
             >
               HOME
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/about"
+            <a
+              href="#about"
               className="text-black hover:text-red-500 transition-colors duration-200"
             >
               ABOUT
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/portfolio"
+            <a
+              href="#portfolio"
               className="text-black hover:text-red-500 transition-colors duration-200"
             >
               PORTFOLIO
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/hireme"
+            <a
+              href="#hireme"
               className="text-black hover:text-red-500 transition-colors duration-200"
             >
               HIRE ME
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
