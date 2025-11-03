@@ -107,6 +107,18 @@ export default function Home() {
             DOWNLOAD CV
           </a>
         </div>
+        <div className="group absolute bottom-0 right-[100px] w-[45%] h-[80%]">
+          <img
+            src="/images/shape.png"
+            alt="Shape"
+            className="absolute left-1/2 bottom-0 h-full transform -translate-x-1/2 transition-all duration-1000 z-0 group-hover:bottom-10"
+          />
+          <img
+            src="/images/me.png"
+            alt="Me"
+            className="absolute left-1/2 bottom-0 h-full transform -translate-x-1/2 transition-all duration-1000 z-10 group-hover:left-[45%]"
+          />
+        </div>
       </div>
 
       <div id="about" className="mx-[8%] my-[5%] text-[#212121]">
